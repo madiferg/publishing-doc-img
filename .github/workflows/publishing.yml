@@ -9,8 +9,7 @@ steps:
 uses: docker/login-action@v1
 with:
 registry: ghcr.io
-username: whinesap
-password: 420@Jazzapples 
+username: ${{ whinesap }}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 }}
 - name: Build the hello-docker Docker image
 run: |
        docker build . --tag ghcr.io/whinesap/publishing-doc-img:latest
