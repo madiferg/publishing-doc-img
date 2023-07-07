@@ -11,8 +11,8 @@ with:
 registry: ghcr.io
 username: whinesap
 password: 420@Jazzapples
-- name: Build the hello-docker Docker image
+- name: Build the publishing-doc-img Docker image
 run: |
-       docker build . --tag ghcr.io/deselikem/hello-docker-gcr-demo:latest
-       docker run ghcr.io/deselikem/hello-docker-gcr-demo:latest
-       docker push ghcr.io/deselikem/hello-docker-gcr-demo:latest
+       docker build . --tag ghcr.io/whinesap/publishing-doc-img:latest
+       docker run ghcr.io/whinesap/publishing-doc-img:latest
+       docker push ghcr.io/whinesap/publishing-doc-img:latest
