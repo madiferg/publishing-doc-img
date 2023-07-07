@@ -1,5 +1,7 @@
 name: publish
+
 on: [push]
+
 jobs:
 publish-hello-docker-image:
 runs-on: ubuntu-latest
@@ -11,6 +13,7 @@ with:
 registry: ghcr.io
 username: ${{ whinesap }}
 password: {{ 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 }}
+
 - name: Build the hello-docker Docker image
 run: |
        docker build . --tag ghcr.io/whinesap/publishing-doc-img:latest
